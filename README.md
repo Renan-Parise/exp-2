@@ -7,7 +7,7 @@ Calculadora web implementada usando o padrão MVC (Model-View-Controller) com Fl
 ## Como Rodar
 
 1. Certifique-se de ter o Python instalado.
-2. Clone este repositório para o seu computador com: 
+2. Clone este repositório para o seu computador com: git clone https://github.com/Renan-Parise/exp-2.git
 3. Navegue até o diretório do projeto.
 4. Instale as dependências executando o seguinte comando: pip install flask
 5. Rode python app.py
