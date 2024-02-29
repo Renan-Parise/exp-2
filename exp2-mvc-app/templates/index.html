@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form method="POST">
+        <label for="x">Número 1:</label>
+        <input type="number" id="x" name="x" required>
+        <br>
+        <label for="y">Número 2:</label>
+        <input type="number" id="y" name="y" required>
+        <br>
+        <label for="operation">Operação:</label>
+        <select id="operation" name="operation">
+            <option value="add">Adição</option>
+            <option value="subtract">Subtração</option>
+        </select>
+        <br>
+        <button type="submit">Calcular</button>
+    </form>
+    {% if result %}
+    <p>O resultado é: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
