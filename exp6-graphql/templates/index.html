@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Lista de Países</h1>
+    <ul>
+        {% for pais in paises %}
+            <li>
+                <h2>{{ pais.name }}</h2>
+                <p><strong>Código:</strong> {{ pais.code }}</p>
+                <p><strong>Continente:</strong> {{ pais.continent.name }}</p>
+                <p><strong>Línguas:</strong> 
+                    {% for lingua in pais.languages %}
+                        {{ lingua.name }}{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
