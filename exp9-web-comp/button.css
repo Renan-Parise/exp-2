@@ -1,0 +1,47 @@
+.custom-button {
+    display: inline-block;
+    padding: 30px 52px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.custom-button.primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-button.secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.custom-button.success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.custom-button.warning {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.custom-button.danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.custom-button.large {
+    padding: 15px 30px;
+}
+
+.custom-button.small {
+    padding: 5px 10px;
+}
+
+.custom-button:hover {
+    opacity: 0.8;
+}
